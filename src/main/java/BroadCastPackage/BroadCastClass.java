@@ -21,8 +21,13 @@ public class BroadCastClass implements Runnable {
 	public BroadCastClass(String message, Socket socket) {
 		this.s = socket;
 		this.msg = message;
+		SetBroadCast(socket);
 	}
 
+	public void SetBroadCast (Socket socket){
+		socketClients.add( socket);
+	}
+	
 	public ArrayList<Socket> getSocket() {
 		return socketClients;
 	}

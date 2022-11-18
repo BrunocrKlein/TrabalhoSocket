@@ -20,7 +20,7 @@ public class StartPifPaf {
 	public static void main(String[] args) {
 
 		identificador += 1;
-		ClientClass Client = new ClientClass(5003, identificador);
+		ClientClass Client = new ClientClass(5012, identificador);
 		Thread t4 = new Thread((Runnable) Client);
 		t4.setPriority(NORM_PRIORITY);
 		t4.start();
